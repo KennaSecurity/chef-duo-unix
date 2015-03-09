@@ -45,7 +45,7 @@ If you really don't want to use chef-vault
   ],
   "default_attributes": {
     "duo-unix":{
-      "service":{
+      "api":{
         "ikey":"some_key",
         "skey":"some_secret_key",
         "host":"api-something.duosecurity.com"
