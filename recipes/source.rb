@@ -23,7 +23,7 @@ case node[:platform]
 when 'debian', 'ubuntu'
   package 'libssl-dev'
 when 'redhat', 'centos', 'fedora', 'amazon', 'scientific'
-  package 'libssl-devel'
+  package 'openssl-devel'
 end
   
 # get source
