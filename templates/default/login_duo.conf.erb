@@ -1,15 +1,22 @@
 [duo]
-; Duo integration key
 ikey = <%= @ikey %>
-; Duo secret key
 skey = <%= @skey %>
-; Duo API host
 host = <%= @host %>
-<% if @group %>
+
+<% if @groups %>
 ; UNIX group that does 2-factor
-group = <%= @group %>
+groups = <%= @groups %>
 <% end -%>
-; Failure mode
+
 failmode = <%= @failmode %>
-; Send command for Duo Push authentication
 pushinfo = <%= @pushinfo %>
+autopush = <%= @autopush %>
+prompts = <%= @prompts %>
+motd = <%= @motd %>
+accept_env_factor = <%= accept_env_factor %>
+fallback_local_ip = <%= fallback_local_ip %>
+https_timeout = <%= https_timeout %>
+
+<% if @http_proxy %>
+http_proxy = <%= @http_proxy %>
+<% end -%>
