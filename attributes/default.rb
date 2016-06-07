@@ -11,7 +11,7 @@ default['duo-unix']['api']['host']              = nil
 default['duo-unix']['from_source']                  = true
 default['duo-unix']['src']['version']               = "1.9.18"
 default['duo-unix']['src']['url']                   = "https://dl.duosecurity.com/duo_unix-#{node['duo-unix']['src']['version']}.tar.gz"
-default['duo-unix']['src']['checksum']              = "ee667f65d47782c8082e477db7367aae"
+default['duo-unix']['src']['checksum']              = "2eb11dff0a173c62e318587c50faec717e8889fbb6bb2d076e4f31999f9107ae"
 
 # login_duo config
 default['duo-unix']['conf']['groups']               = nil

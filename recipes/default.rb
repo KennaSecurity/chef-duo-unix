@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-include_recipe 'openssh::default'
+include_recipe 'apt' if ['ubuntu', 'debian'].include? node[:platform]
 include_recipe 'chef-vault'
 
 # determine install method
@@ -46,5 +46,5 @@ end
 
 # configure openssh to use login_duo
 node.default['openssh']['server'].merge!(node['duo-unix']['sshd'])
-
+include_recipe 'openssh::default'
 # TODO: add pam_duo support
