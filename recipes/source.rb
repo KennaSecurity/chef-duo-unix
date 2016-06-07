@@ -27,8 +27,8 @@ when 'redhat', 'centos', 'fedora', 'amazon', 'scientific'
 end
   
 # get source
-src_dir = '/usr/local/src/duo_unix'
-tarball = '/usr/local/src/duo_unix.tar.gz'
+src_dir = "/usr/local/src/duo_unix-#{node['duo-unix']['src']['version']}"
+tarball = "/usr/local/src/duo_unix-#{node['duo-unix']['src']['version']}.tar.gz"
 remote_file tarball do
   source   node['duo-unix']['src']['url']
   checksum node['duo-unix']['src']['checksum']
